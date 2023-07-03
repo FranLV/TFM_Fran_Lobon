@@ -1,4 +1,7 @@
 # TFM: Detección de objetos que se mueven de forma independiente (IMOs) con sensores de eventos
+
+Trabajo de Fin de Máster realizado en el Máster de Ciencia de Datos e Ingeniería de Computadores por la Universidad de Granada.
+
 ## Resumen
 <p style="text-align: justify; text-justify: inter-word;">
 La detección de objetos que se mueven independientemente es un campo de interes por su aplicación en tareas como navegación. Por otra parte, está en auge ya que se están introduciendo nuevos sensores como son los sensores neuromórficos (o cámaras de eventos) que son de especial interés cuando se habla de alto rango dinámico y velocidad en la escena (fps). En paralelo se están desarrollando a su vez métodos tanto matemáticos como los métodos más novedosos que son el aprendizaje profundo, que son capaces de explotar estos nuevos sensores. Esto hace que a día de hoy sea un campo realmente grande pero que está en continuo avance. En este trabajo se va a realizar un repaso del estado del arte de los métodos más actuales y/o de mayor importancia, así como los conjuntos de datos que se utilizan para probar los diferentes métodos. Además se presenta un sistema creado a partir de los métodos del estado del arte y se propone un nuevo conjunto de datos para detección de objetos que se mueven independientemente en navegación. Por último se discuten tanto los resultados obtenidos por medio de las métricas que se utilizan para estos métodos como por qué no utilizar los conjuntos de datos que ya existen.
@@ -7,6 +10,18 @@ La detección de objetos que se mueven independientemente es un campo de interes
 <p align="center">
  <img src="img/tfm_github.png">
 </p>
+
+Si vais a utilizar parte de este trabajo, por favor citadlo:
+
+```bibtex
+@software{tfm_fran_lobon,
+  author = {Lobón Villanueva, Francisco},
+  month = jul,
+  title = {{Detección de objetos que se mueven de forma independiente (IMOs) con sensores de eventos}},
+  url = {https://github.com/FranLV/TFM_Fran_Lobon},
+  year = {2023}
+}
+```
 
 ## Prerequisitos
 
