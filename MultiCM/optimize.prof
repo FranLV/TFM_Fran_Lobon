@@ -1,0 +1,308 @@
+         30376651 function calls (29946519 primitive calls) in 76.260 seconds
+
+   Ordered by: cumulative time
+   List reduced from 718 to 300 due to restriction <300>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   76.260   76.260 patch_contrast_pyramid.py:181(run_scipy_over_scale)
+        4    0.000    0.000   76.258   19.065 patch_contrast_pyramid.py:254(run_scipy)
+        4    0.000    0.000   48.006   12.002 scipy_minimize.py:6(minimize)
+        4    0.000    0.000   48.006   12.001 _minimize.py:46(minimize)
+        4    0.007    0.002   48.005   12.001 _optimize.py:1826(_minimize_newtoncg)
+       98    0.020    0.000   44.303    0.452 torch_wrapper.py:51(get_hvp)
+      481   43.057    0.090   43.057    0.090 {method 'cpu' of 'torch._C._TensorBase' objects}
+      243    0.003    0.000   41.773    0.172 base_wrapper.py:126(_concat)
+        3    0.012    0.004   28.249    9.416 patch_contrast_pyramid.py:333(initialize_guess_from_optuna_sampling)
+      238    0.001    0.000   27.986    0.118 study.py:321(optimize)
+      238    0.002    0.000   27.984    0.118 _optimize.py:37(_optimize)
+      238    0.022    0.000   27.983    0.118 _optimize.py:125(_optimize_sequential)
+     4078    0.038    0.000   27.955    0.007 _optimize.py:183(_run_trial)
+     4078    0.011    0.000   26.647    0.007 patch_contrast_pyramid.py:356(<lambda>)
+     4078    0.067    0.000   26.632    0.007 patch_contrast_pyramid.py:376(objective_initial)
+     4078    0.012    0.000   23.078    0.006 patch_contrast_pyramid.py:378(<dictcomp>)
+     8156    0.033    0.000   23.066    0.003 patch_contrast_pyramid.py:430(sampling_initial)
+     8156    0.024    0.000   22.963    0.003 _deprecated.py:97(wrapper)
+     8156    0.007    0.000   22.907    0.003 _trial.py:161(suggest_uniform)
+     8156    0.026    0.000   22.899    0.003 _trial.py:70(suggest_float)
+     8156    0.088    0.000   22.829    0.003 _trial.py:607(_suggest)
+     8156    0.130    0.000   22.341    0.003 sampler.py:432(sample_independent)
+     4348    0.078    0.000   16.684    0.004 parzen_estimator.py:92(sample)
+     4348    0.016    0.000   16.383    0.004 _truncnorm.py:205(rvs)
+     4348    0.088    0.000   16.348    0.004 _truncnorm.py:173(ppf)
+     4348    0.025    0.000   16.173    0.004 _truncnorm.py:180(ppf_left)
+     4348    0.069    0.000   15.151    0.003 _truncnorm.py:169(_ndtri_exp)
+   104352    0.063    0.000   15.066    0.000 _truncnorm.py:164(_ndtri_exp_single)
+   104352    6.360    0.000   15.004    0.000 _truncnorm.py:151(_bisect)
+  5232587    5.287    0.000    8.680    0.000 _truncnorm.py:77(_log_ndtr_single)
+     9112    0.018    0.000    3.712    0.000 event_image_converter.py:45(create_iwe)
+      145    0.000    0.000    3.666    0.025 _differentiable_functions.py:249(_update_fun)
+      141    0.000    0.000    3.666    0.026 _differentiable_functions.py:154(update_fun)
+      141    0.002    0.000    3.665    0.026 _differentiable_functions.py:132(fun_wrapped)
+      282    0.018    0.000    3.664    0.013 _optimize.py:67(_compute_if_needed)
+      141    0.000    0.000    3.662    0.026 _optimize.py:74(__call__)
+      141    0.005    0.000    3.642    0.026 torch_wrapper.py:30(get_value_and_grad)
+     4078    0.030    0.000    3.401    0.001 patch_contrast_pyramid.py:393(calculate_cost_for_small_patch)
+     8696    0.174    0.000    3.260    0.000 parzen_estimator.py:131(log_pdf)
+    13044    0.207    0.000    3.169    0.000 _truncnorm.py:112(_log_gauss_mass)
+       98    0.001    0.000    3.114    0.032 _optimize.py:1084(_line_search_wolfe12)
+       98    0.001    0.000    3.113    0.032 _linesearch.py:31(line_search_wolfe1)
+       98    0.003    0.000    3.112    0.032 _linesearch.py:91(scalar_search_wolfe1)
+      137    0.001    0.000    3.098    0.023 _linesearch.py:73(phi)
+      141    0.001    0.000    3.097    0.022 _differentiable_functions.py:264(fun)
+     8696    0.156    0.000    2.932    0.000 _truncnorm.py:218(logpdf)
+    13044    0.064    0.000    2.796    0.000 _truncnorm.py:127(mass_case_central)
+      239    0.001    0.000    2.754    0.012 patch_contrast_pyramid.py:306(<lambda>)
+      239    0.018    0.000    2.753    0.012 patch_contrast_pyramid.py:443(objective_scipy)
+    26088    0.147    0.000    2.732    0.000 _truncnorm.py:72(_ndtr)
+  5230517    2.185    0.000    2.692    0.000 _truncnorm.py:58(_ndtr_single)
+      239    0.002    0.000    2.605    0.011 patch_contrast_base.py:275(calculate_cost)
+    26088    0.719    0.000    2.585    0.000 _erf.py:99(erf)
+     8156    0.040    0.000    2.566    0.000 event_image_converter.py:86(create_image_from_events_numpy)
+       98    0.006    0.000    2.502    0.026 functional.py:813(vhp)
+      337    0.005    0.000    2.049    0.006 __init__.py:177(grad)
+378369/273457    0.423    0.000    2.041    0.000 {built-in method numpy.core._multiarray_umath.implement_array_function}
+      337    2.036    0.006    2.036    0.006 {method 'run_backward' of 'torch._C._EngineBase' objects}
+      141    0.000    0.000    1.623    0.012 base_wrapper.py:103(_eval_func)
+     8156    0.768    0.000    1.622    0.000 event_image_converter.py:257(bilinear_vote_numpy)
+4795/4317    0.008    0.000    1.617    0.000 base.py:45(wrapper)
+4795/4317    0.005    0.000    1.601    0.000 base.py:32(wrapper)
+      239    0.006    0.000    1.494    0.006 patch_contrast_base.py:291(get_arg_for_cost)
+      196    0.002    0.000    1.359    0.007 functional.py:139(_autograd_grad)
+      956    0.019    0.000    1.123    0.001 event_image_converter.py:126(create_image_from_events_tensor)
+      239    0.015    0.000    1.096    0.005 hybrid.py:46(calculate)
+     4078    0.045    0.000    1.071    0.000 _tell.py:82(_tell_with_warning)
+     8696    0.083    0.000    1.059    0.000 parzen_estimator.py:41(__init__)
+267734/12710    0.452    0.000    0.939    0.000 copy.py:128(deepcopy)
+39558/16788    0.122    0.000    0.910    0.000 copy.py:259(_reconstruct)
+     8159    0.076    0.000    0.903    0.000 _filters.py:264(gaussian_filter)
+      239    0.001    0.000    0.859    0.004 multi_focal_normalized_gradient_magnitude.py:38(calculate)
+      239    0.010    0.000    0.858    0.004 multi_focal_normalized_gradient_magnitude.py:73(calculate_torch)
+      717    0.011    0.000    0.848    0.001 normalized_gradient_magnitude.py:63(calculate_torch)
+     1434    0.098    0.000    0.836    0.001 gradient_magnitude.py:60(calculate_torch)
+     1673    0.593    0.000    0.826    0.000 stat_utils.py:64(forward)
+44588/12710    0.163    0.000    0.813    0.000 copy.py:227(_deepcopy_dict)
+     8156    0.722    0.000    0.722    0.000 {method 'at' of 'numpy.ufunc' objects}
+  5232567    0.701    0.000    0.701    0.000 {built-in method math.log}
+      956    0.522    0.001    0.689    0.001 event_image_converter.py:316(bilinear_vote_tensor)
+     8156    0.412    0.000    0.675    0.000 sampler.py:587(_get_observation_pairs)
+    16318    0.053    0.000    0.641    0.000 _filters.py:210(gaussian_filter1d)
+     4795    0.024    0.000    0.635    0.000 warp.py:156(warp_event)
+        4    0.000    0.000    0.574    0.143 _optimize.py:175(_prepare_scalar_function)
+        4    0.000    0.000    0.574    0.143 _differentiable_functions.py:86(__init__)
+    18963    0.529    0.000    0.529    0.000 _erf.py:129(calc_case_med1)
+     4078    0.007    0.000    0.501    0.000 normalized_gradient_magnitude.py:40(calculate)
+     4078    0.012    0.000    0.492    0.000 normalized_gradient_magnitude.py:81(calculate_numpy)
+     8156    0.113    0.000    0.481    0.000 gradient_magnitude.py:78(calculate_numpy)
+    13044    0.013    0.000    0.467    0.000 <__array_function__ internals>:177(broadcast_arrays)
+     8696    0.126    0.000    0.464    0.000 parzen_estimator.py:383(_calculate_numerical_params)
+    13044    0.053    0.000    0.435    0.000 stride_tricks.py:480(broadcast_arrays)
+     8696    0.110    0.000    0.432    0.000 parzen_estimator.py:196(_calculate_weights)
+  4393040    0.416    0.000    0.416    0.000 {built-in method math.erf}
+      956    0.009    0.000    0.410    0.000 functional.py:1291(gaussian_blur)
+    16318    0.092    0.000    0.396    0.000 _filters.py:83(correlate1d)
+      956    0.015    0.000    0.394    0.000 functional_tensor.py:767(gaussian_blur)
+    26084    0.386    0.000    0.386    0.000 _erf.py:115(calc_case_small1)
+    39132    0.048    0.000    0.340    0.000 <__array_function__ internals>:177(full_like)
+   131068    0.318    0.000    0.318    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+      956    0.019    0.000    0.314    0.000 functional_tensor.py:758(_get_gaussian_kernel2d)
+      717    0.131    0.000    0.312    0.000 warp.py:263(warp_event_from_optical_flow)
+4063/3107    0.013    0.000    0.292    0.000 module.py:1124(_call_impl)
+     8696    0.029    0.000    0.290    0.000 stride_tricks.py:546(<listcomp>)
+    34795    0.028    0.000    0.282    0.000 fromnumeric.py:51(_wrapfunc)
+    26088    0.185    0.000    0.260    0.000 stride_tricks.py:340(_broadcast_to)
+     8156    0.096    0.000    0.256    0.000 _in_memory.py:184(set_trial_param)
+    39132    0.070    0.000    0.253    0.000 numeric.py:357(full_like)
+477988/469356    0.146    0.000    0.246    0.000 {built-in method builtins.isinstance}
+    16318    0.245    0.000    0.245    0.000 {built-in method scipy.ndimage._nd_image.correlate1d}
+     3808    0.020    0.000    0.245    0.000 _random.py:61(sample_independent)
+     8699    0.008    0.000    0.239    0.000 <__array_function__ internals>:177(clip)
+     8699    0.010    0.000    0.222    0.000 fromnumeric.py:2085(clip)
+     8567    0.222    0.000    0.222    0.000 _erf.py:146(calc_case_med2)
+    16312    0.217    0.000    0.217    0.000 {Sobel}
+    11293    0.217    0.000    0.217    0.000 _erf.py:122(calc_case_small2)
+    43119    0.079    0.000    0.211    0.000 fromnumeric.py:69(_wrapreduction)
+     4780    0.205    0.000    0.205    0.000 {built-in method torch.conv2d}
+     8699    0.010    0.000    0.204    0.000 {method 'clip' of 'numpy.ndarray' objects}
+     1913    0.198    0.000    0.198    0.000 {method 'to' of 'torch._C._TensorBase' objects}
+     4348    0.115    0.000    0.195    0.000 {method 'choice' of 'numpy.random.mtrand.RandomState' objects}
+     8699    0.039    0.000    0.195    0.000 _methods.py:126(_clip)
+    16318    0.101    0.000    0.192    0.000 _filters.py:179(_gaussian_kernel1d)
+     4078    0.047    0.000    0.188    0.000 warp.py:493(warp_event_2dof_xy)
+     3824    0.017    0.000    0.186    0.000 conv.py:456(forward)
+    26088    0.028    0.000    0.171    0.000 <__array_function__ internals>:177(isposinf)
+     4078    0.023    0.000    0.168    0.000 study.py:437(ask)
+     3824    0.005    0.000    0.165    0.000 conv.py:448(_conv_forward)
+    52176    0.048    0.000    0.162    0.000 ufunclike.py:48(func)
+    24480    0.054    0.000    0.160    0.000 _ni_support.py:73(_get_output)
+      239    0.001    0.000    0.156    0.001 total_variation.py:38(calculate)
+      239    0.001    0.000    0.155    0.001 total_variation.py:60(calculate_torch)
+     8156    0.011    0.000    0.150    0.000 <__array_function__ internals>:177(mean)
+      239    0.007    0.000    0.148    0.001 total_variation.py:110(get_sobel_image_torch)
+    28546    0.055    0.000    0.142    0.000 copy.py:66(copy)
+     4078    0.032    0.000    0.140    0.000 _in_memory.py:265(set_trial_state_values)
+    26088    0.023    0.000    0.132    0.000 <__array_function__ internals>:177(isneginf)
+     4348    0.028    0.000    0.131    0.000 sampler.py:693(_split_observation_pairs)
+     8156    0.020    0.000    0.129    0.000 fromnumeric.py:3313(mean)
+    21740    0.023    0.000    0.124    0.000 <__array_function__ internals>:177(argsort)
+    17398    0.063    0.000    0.123    0.000 _methods.py:92(_clip_dep_is_scalar_nan)
+    33710    0.033    0.000    0.120    0.000 {method 'sum' of 'numpy.ndarray' objects}
+    29602    0.037    0.000    0.120    0.000 <__array_function__ internals>:177(concatenate)
+     4795    0.066    0.000    0.120    0.000 warp.py:235(calculate_dt)
+    47831    0.049    0.000    0.119    0.000 <__array_function__ internals>:177(copyto)
+9112/4795    0.036    0.000    0.110    0.000 warp.py:201(calculate_reftime)
+     8156    0.034    0.000    0.110    0.000 _methods.py:163(_mean)
+     3808    0.007    0.000    0.105    0.000 _transform.py:60(__init__)
+     8156    0.021    0.000    0.103    0.000 _trial.py:692(_get_latest_trial)
+    84410    0.103    0.000    0.103    0.000 distributions.py:193(to_internal_repr)
+    12234    0.077    0.000    0.101    0.000 _in_memory.py:378(get_all_trials)
+    25011    0.025    0.000    0.100    0.000 {method 'max' of 'numpy.ndarray' objects}
+    43486    0.047    0.000    0.100    0.000 <__array_function__ internals>:177(empty_like)
+     3808    0.044    0.000    0.098    0.000 _transform.py:154(_transform_search_space)
+     9023    0.010    0.000    0.096    0.000 <__array_function__ internals>:177(any)
+     4348    0.042    0.000    0.096    0.000 _truncnorm.py:104(_log_ndtr)
+    12786    0.013    0.000    0.095    0.000 <__array_function__ internals>:177(all)
+      476    0.001    0.000    0.094    0.000 study.py:104(best_params)
+      476    0.001    0.000    0.093    0.000 study.py:135(best_trial)
+   837477    0.091    0.000    0.091    0.000 {built-in method math.erfc}
+    17138    0.020    0.000    0.090    0.000 <__array_function__ internals>:177(atleast_1d)
+     8156    0.012    0.000    0.088    0.000 study.py:226(get_trials)
+    33710    0.013    0.000    0.087    0.000 _methods.py:46(_sum)
+     8156    0.052    0.000    0.086    0.000 {method 'uniform' of 'numpy.random.mtrand.RandomState' objects}
+   153636    0.039    0.000    0.085    0.000 abc.py:117(__instancecheck__)
+      336    0.017    0.000    0.084    0.000 sampler.py:236(__init__)
+     8159    0.028    0.000    0.082    0.000 _dtype.py:344(_name_get)
+    21740    0.022    0.000    0.080    0.000 fromnumeric.py:1012(argsort)
+     4682    0.080    0.000    0.080    0.000 {built-in method torch.cat}
+      956    0.079    0.000    0.079    0.000 {method 'item' of 'torch._C._TensorBase' objects}
+     1912    0.040    0.000    0.077    0.000 functional_tensor.py:748(_get_gaussian_kernel1d)
+    54648    0.025    0.000    0.077    0.000 copy.py:264(<genexpr>)
+     4078    0.004    0.000    0.075    0.000 <__array_function__ internals>:177(vstack)
+    11964    0.041    0.000    0.074    0.000 {built-in method builtins.sum}
+    25011    0.010    0.000    0.074    0.000 _methods.py:38(_amax)
+     8696    0.011    0.000    0.074    0.000 sampler.py:49(default_weights)
+      485    0.001    0.000    0.074    0.000 __init__.py:1467(info)
+      717    0.001    0.000    0.074    0.000 base.py:53(get_item)
+      247    0.001    0.000    0.072    0.000 __init__.py:1600(_log)
+    13668    0.012    0.000    0.070    0.000 __init__.py:34(nt_min)
+     8696    0.009    0.000    0.070    0.000 <__array_function__ internals>:177(sum)
+    12786    0.019    0.000    0.069    0.000 fromnumeric.py:2406(all)
+    20393    0.017    0.000    0.069    0.000 {method 'min' of 'numpy.ndarray' objects}
+    26088    0.068    0.000    0.068    0.000 ufunclike.py:127(isposinf)
+     9023    0.015    0.000    0.064    0.000 fromnumeric.py:2307(any)
+    17782    0.016    0.000    0.062    0.000 <__array_function__ internals>:177(ndim)
+     4348    0.018    0.000    0.061    0.000 sampler.py:491(_compare)
+     4078    0.009    0.000    0.060    0.000 shape_base.py:222(vstack)
+    71912    0.048    0.000    0.058    0.000 copy.py:243(_keep_alive)
+     9351    0.010    0.000    0.058    0.000 __init__.py:20(nt_max)
+    20866    0.029    0.000    0.057    0.000 _in_memory.py:363(get_trial)
+    34482    0.040    0.000    0.056    0.000 {built-in method builtins.any}
+     3824    0.005    0.000    0.056    0.000 _tensor.py:26(wrapped)
+      247    0.001    0.000    0.054    0.000 __init__.py:1626(handle)
+     4078    0.023    0.000    0.054    0.000 _in_memory.py:148(create_new_trial)
+     4348    0.006    0.000    0.054    0.000 <__array_function__ internals>:177(prod)
+    45096    0.043    0.000    0.054    0.000 _in_memory.py:368(_get_trial)
+    52176    0.046    0.000    0.054    0.000 ufunclike.py:22(func)
+      247    0.002    0.000    0.053    0.000 __init__.py:1680(callHandlers)
+    17392    0.028    0.000    0.053    0.000 parzen_estimator.py:283(_transform_to_uniform)
+     8156    0.025    0.000    0.052    0.000 _in_memory.py:293(_update_cache)
+    20393    0.008    0.000    0.052    0.000 _methods.py:42(_amin)
+      494    0.002    0.000    0.052    0.000 __init__.py:955(handle)
+    17138    0.038    0.000    0.051    0.000 shape_base.py:23(atleast_1d)
+     8696    0.015    0.000    0.051    0.000 fromnumeric.py:2162(sum)
+     3808    0.023    0.000    0.051    0.000 _transform.py:119(untransform)
+     3824    0.003    0.000    0.050    0.000 _tensor.py:637(__rsub__)
+      672    0.002    0.000    0.049    0.000 contextlib.py:76(inner)
+      494    0.002    0.000    0.049    0.000 __init__.py:1088(emit)
+    12903    0.024    0.000    0.048    0.000 numerictypes.py:356(issubdtype)
+     8696    0.047    0.000    0.047    0.000 _truncnorm.py:108(_norm_logpdf)
+     3824    0.047    0.000    0.047    0.000 {built-in method torch.rsub}
+   620940    0.047    0.000    0.047    0.000 {method 'get' of 'dict' objects}
+    26088    0.046    0.000    0.046    0.000 ufunclike.py:199(isneginf)
+   153636    0.046    0.000    0.046    0.000 {built-in method _abc._abc_instancecheck}
+     8696    0.013    0.000    0.045    0.000 numeric.py:149(ones)
+     4078    0.005    0.000    0.044    0.000 _trial.py:47(__init__)
+     4348    0.007    0.000    0.043    0.000 fromnumeric.py:2927(prod)
+     8159    0.011    0.000    0.042    0.000 _dtype.py:330(_name_includes_bit_suffix)
+     4078    0.008    0.000    0.041    0.000 study.py:953(_pop_waiting_trial_id)
+   110839    0.041    0.000    0.041    0.000 {built-in method numpy.asarray}
+     4084    0.005    0.000    0.041    0.000 <__array_function__ internals>:177(amax)
+    34004    0.041    0.000    0.041    0.000 {built-in method numpy.zeros}
+     2390    0.040    0.000    0.040    0.000 {method 'max' of 'torch._C._TensorBase' objects}
+     2390    0.040    0.000    0.040    0.000 {method 'min' of 'torch._C._TensorBase' objects}
+     8696    0.008    0.000    0.039    0.000 <__array_function__ internals>:177(sort)
+     4078    0.015    0.000    0.039    0.000 _trial.py:58(_init_relative_params)
+    24480    0.015    0.000    0.038    0.000 _ni_support.py:57(_normalize_sequence)
+      672    0.038    0.000    0.038    0.000 {function SeedSequence.generate_state at 0x000001D1E45E2560}
+      336    0.013    0.000    0.038    0.000 _random.py:41(__init__)
+    13044    0.035    0.000    0.037    0.000 stride_tricks.py:416(_broadcast_shape)
+    21740    0.036    0.000    0.036    0.000 {method 'argsort' of 'numpy.ndarray' objects}
+      336    0.036    0.000    0.036    0.000 event_utils.py:50(crop_event)
+      239    0.001    0.000    0.035    0.000 patch_contrast_pyramid.py:477(motion_to_dense_flow)
+     8156    0.010    0.000    0.035    0.000 _base.py:589(get_trial_system_attrs)
+     8156    0.016    0.000    0.034    0.000 _trial.py:677(_check_distribution)
+   118681    0.034    0.000    0.034    0.000 {built-in method builtins.getattr}
+      239    0.010    0.000    0.034    0.000 patch_contrast_base.py:464(interpolate_dense_flow_from_patch_tensor)
+     8156    0.030    0.000    0.032    0.000 _methods.py:66(_count_reduce_items)
+     4182    0.004    0.000    0.032    0.000 <__array_function__ internals>:177(amin)
+     4084    0.007    0.000    0.032    0.000 fromnumeric.py:2677(amax)
+    17782    0.025    0.000    0.032    0.000 fromnumeric.py:3121(ndim)
+   428825    0.032    0.000    0.032    0.000 {built-in method builtins.id}
+    13044    0.020    0.000    0.031    0.000 {built-in method builtins.all}
+    13044    0.013    0.000    0.031    0.000 <__array_function__ internals>:177(real)
+     4348    0.005    0.000    0.030    0.000 <__array_function__ internals>:177(argmax)
+     4082    0.004    0.000    0.029    0.000 <__array_function__ internals>:177(atleast_2d)
+    33020    0.029    0.000    0.029    0.000 {built-in method numpy.arange}
+      494    0.029    0.000    0.029    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+     2868    0.028    0.000    0.028    0.000 {built-in method torch.square}
+    17760    0.028    0.000    0.028    0.000 {method 'astype' of 'numpy.ndarray' objects}
+    76254    0.027    0.000    0.027    0.000 sampler.py:640(<listcomp>)
+    78660    0.027    0.000    0.027    0.000 {built-in method numpy.array}
+    16312    0.007    0.000    0.027    0.000 __init__.py:30(_filter_study)
+     3346    0.026    0.000    0.026    0.000 {method 'long' of 'torch._C._TensorBase' objects}
+    84410    0.026    0.000    0.026    0.000 sampler.py:447(<genexpr>)
+    43119    0.025    0.000    0.025    0.000 fromnumeric.py:70(<dictcomp>)
+   230106    0.021    0.000    0.024    0.000 {built-in method builtins.len}
+    16553    0.024    0.000    0.024    0.000 {method 'format' of 'str' objects}
+     1673    0.024    0.000    0.024    0.000 {built-in method torch.mean}
+    25806    0.018    0.000    0.024    0.000 numerictypes.py:282(issubclass_)
+     4182    0.006    0.000    0.023    0.000 fromnumeric.py:2802(amin)
+      337    0.023    0.000    0.023    0.000 {built-in method torch.tensor}
+     8696    0.009    0.000    0.023    0.000 fromnumeric.py:852(sort)
+    25896    0.023    0.000    0.023    0.000 {method '__reduce_ex__' of 'object' objects}
+     8696    0.023    0.000    0.023    0.000 {built-in method numpy.frompyfunc}
+   120740    0.018    0.000    0.022    0.000 {built-in method builtins.issubclass}
+   293380    0.022    0.000    0.022    0.000 {method 'append' of 'list' objects}
+     1434    0.022    0.000    0.022    0.000 {built-in method torch.min}
+     4082    0.018    0.000    0.021    0.000 shape_base.py:81(atleast_2d)
+     8699    0.021    0.000    0.021    0.000 _methods.py:107(_clip_dep_invoke_with_casting)
+     3808    0.014    0.000    0.021    0.000 _transform.py:248(_untransform_numerical_param)
+   177452    0.021    0.000    0.021    0.000 _frozen.py:434(params)
+     7680    0.009    0.000    0.021    0.000 distributions.py:653(check_distribution_compatibility)
+     4078    0.006    0.000    0.020    0.000 _tell.py:23(_get_frozen_trial)
+    13044    0.014    0.000    0.020    0.000 stride_tricks.py:538(<listcomp>)
+     4348    0.008    0.000    0.020    0.000 fromnumeric.py:1127(argmax)
+      239    0.003    0.000    0.020    0.000 functional.py:363(resize)
+   122537    0.019    0.000    0.019    0.000 _in_memory.py:393(<lambda>)
+     4078    0.012    0.000    0.019    0.000 _in_memory.py:167(_create_running_trial)
+      956    0.019    0.000    0.019    0.000 {built-in method torch.mm}
+     8696    0.012    0.000    0.019    0.000 parzen_estimator.py:339(_precompute_sigmas0)
+    25896    0.014    0.000    0.019    0.000 copyreg.py:100(__newobj__)
+     1195    0.019    0.000    0.019    0.000 {built-in method torch.max}
+    45082    0.015    0.000    0.018    0.000 __init__.py:16(is_numpy)
+     4348    0.008    0.000    0.018    0.000 parzen_estimator.py:300(_transform_from_uniform)
+     1195    0.018    0.000    0.018    0.000 {built-in method torch.nn.functional.pad}
+   152508    0.018    0.000    0.018    0.000 _frozen.py:411(_get_values)
+     1434    0.017    0.000    0.017    0.000 {built-in method torch.gather}
+    25155    0.017    0.000    0.017    0.000 {method 'copy' of 'numpy.ndarray' objects}
+   191268    0.017    0.000    0.017    0.000 copy.py:182(_deepcopy_atomic)
+    12234    0.009    0.000    0.017    0.000 _base.py:609(check_trial_is_updatable)
+     8156    0.007    0.000    0.017    0.000 distributions.py:91(__eq__)
+     4316    0.005    0.000    0.017    0.000 typing.py:993(__instancecheck__)
+   173590    0.017    0.000    0.017    0.000 {method 'items' of 'dict' objects}
+     8160    0.017    0.000    0.017    0.000 {built-in method _warnings.warn}
+      238    0.001    0.000    0.016    0.000 _convert_positional_args.py:37(converter_wrapper)
+      384    0.001    0.000    0.016    0.000 <__array_function__ internals>:177(linspace)
+    42400    0.016    0.000    0.016    0.000 {built-in method numpy.empty}
+    43480    0.016    0.000    0.016    0.000 stride_tricks.py:542(<genexpr>)
+
+

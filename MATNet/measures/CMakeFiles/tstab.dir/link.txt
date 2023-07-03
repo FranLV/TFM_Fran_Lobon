@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,tstab.so -o tstab.so CMakeFiles/tstab.dir/cpp/polycont/python.cpp.o CMakeFiles/tstab.dir/cpp/clipper/clipper.cpp.o  -Wl,-rpath,/home/francis/anaconda3/lib cpp/Boost.NumPy/libs/numpy/src/libboost_numpy.a /usr/lib/x86_64-linux-gnu/libboost_python38.so.1.71.0 /home/francis/anaconda3/lib/libpython3.9.so 
